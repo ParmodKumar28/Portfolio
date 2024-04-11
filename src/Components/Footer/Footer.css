@@ -68,3 +68,49 @@
     transform: scale(1.1);
     transition: 0.3s;
 }
+
+@media(max-width: 768px){
+    .footer{
+        margin: 20px 30px;
+    }
+
+    .footer-top{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-top-left p{
+        font-size: 16px;
+        min-width: 300px;
+    }
+
+    .footer-top-right{
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+
+    .footer-email-input{
+        padding: 15px 20px;
+        padding-right: 60px;
+    }
+
+    .footer-email-input input{
+        font-size: 16px;
+    } 
+
+    .footer-subscribe{
+        font-size: 16px;
+        padding: 15px 40px;
+    }
+
+    .footer-bottom{
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
+    }
+
+    .footer-bottom-right{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
