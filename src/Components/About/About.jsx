@@ -5,7 +5,7 @@ import profile_img from "../../assets/profile_img.svg"
 const About = () => {
     return (
         // About container
-        <div className="about">
+        <div id="about" className="about">
             {/* About title */}
             <div className="about-title">
                 <h1>About me</h1>
