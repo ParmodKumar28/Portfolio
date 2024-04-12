@@ -1,5 +1,5 @@
 import "./Navbar.css"
-import logo from "../../assets/logo.svg"
+import logo from "../../assets/logo2.png"
 import { useRef, useState } from "react"
 import underline from "../../assets/nav_underline.svg"
 import AnchorLink from "react-anchor-link-smooth-scroll"
@@ -23,7 +23,7 @@ const Navbar = () => {
     return (
         // Navbar
         <div className='navbar'>
-            <img src={logo} alt="logo" />
+            <AnchorLink className='anchor-link' offset={50} href='#home'> <img onClick={() => setMenu("home")} className="logo" src={logo} alt="logo" /></AnchorLink>
 
             {/* For mobile view */}
             <img src={menu_open} alt="" onClick={openMenu} className="nav-mob-open" />

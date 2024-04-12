@@ -74,6 +74,11 @@
     transition: transform 0.3s;
 }
 
+.logo{
+    width: 200px;
+    margin-bottom: 10px;
+}
+
 @media(max-width: 768px) {
     .footer {
         margin: 20px 30px;
@@ -117,5 +122,11 @@
 
     .footer-bottom-right {
         gap: 20px;
+    }
+
+    .logo{
+        width: 160px;
+        margin-bottom: 8px;
+        margin-left: 0px;    
     }
 }

@@ -4,8 +4,16 @@ import mail_icon from "../../assets/mail_icon.svg"
 import location_icon from "../../assets/location_icon.svg";
 import call_icon from "../../assets/call_icon.svg";
 import toast from "react-hot-toast";
+import { useState } from 'react';
 
 const Contact = () => {
+
+    // State's
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+
+
     // On submit
     const onSubmit = async (event) => {
         event.preventDefault();
@@ -27,6 +35,10 @@ const Contact = () => {
 
         if (res.success) {
             toast.success(res.message);
+            // Clearing field's
+            setName("");
+            setEmail("");
+            setMessage("");
         }
     };
 
@@ -61,11 +73,11 @@ const Contact = () => {
                 {/* Right section */}
                 <form onSubmit={onSubmit} action="" className="contact-right">
                     <label htmlFor="">Your Name</label>
-                    <input type="text" placeholder='Enter your name' name='name' required />
+                    <input onChange={(e) => setName(e.target.value)} value={name} type="text" placeholder='Enter your name' name='name' required />
                     <label htmlFor="">Your Email</label>
-                    <input type="email" placeholder='Enter your email' name='email' required />
+                    <input onChange={(e) => setEmail(e.target.value)} value={email} type="email" placeholder='Enter your email' name='email' required />
                     <label htmlFor="">Write your message here</label>
-                    <textarea name="message" rows="8" placeholder='Enter your message' required></textarea>
+                    <textarea onChange={(e) => setMessage(e.target.value)} value={message} name="message" rows="8" placeholder='Enter your message' required></textarea>
                     <button type='submit' className="contact-submit">
                         Submit now
                     </button>
