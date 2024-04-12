@@ -3,6 +3,7 @@ import theme_pattern from "../../assets/theme_pattern.svg";
 import mail_icon from "../../assets/mail_icon.svg"
 import location_icon from "../../assets/location_icon.svg";
 import call_icon from "../../assets/call_icon.svg";
+import toast from "react-hot-toast";
 
 const Contact = () => {
     // On submit
@@ -25,7 +26,7 @@ const Contact = () => {
         }).then((res) => res.json());
 
         if (res.success) {
-            alert(res.message)
+            toast.success(res.message);
         }
     };
 
@@ -60,11 +61,11 @@ const Contact = () => {
                 {/* Right section */}
                 <form onSubmit={onSubmit} action="" className="contact-right">
                     <label htmlFor="">Your Name</label>
-                    <input type="text" placeholder='Enter your name' name='name' />
+                    <input type="text" placeholder='Enter your name' name='name' required />
                     <label htmlFor="">Your Email</label>
-                    <input type="email" placeholder='Enter your email' name='email' />
+                    <input type="email" placeholder='Enter your email' name='email' required />
                     <label htmlFor="">Write your message here</label>
-                    <textarea name="message" rows="8" placeholder='Enter your message'></textarea>
+                    <textarea name="message" rows="8" placeholder='Enter your message' required></textarea>
                     <button type='submit' className="contact-submit">
                         Submit now
                     </button>
