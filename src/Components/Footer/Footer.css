@@ -110,12 +110,12 @@
     }
 
     .footer-bottom {
-        flex-direction: column-reverse;
-        margin-bottom: 30px;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 10px;
     }
 
     .footer-bottom-right {
-        flex-direction: column;
-        gap: 10px;
+        gap: 20px;
     }
 }

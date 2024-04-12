@@ -31,10 +31,19 @@ const About = () => {
 
                     {/* About skills */}
                     <div className="about-skills">
-                        <div className="about-skill"><p>HTML & CSS</p> <hr style={{ width: '50%' }} /></div>
-                        <div className="about-skill"><p>React JS</p> <hr style={{ width: '70%' }} /></div>
-                        <div className="about-skill"><p>Javascript</p> <hr style={{ width: '60%' }} /></div>
-                        <div className="about-skill"><p>Node JS</p> <hr style={{ width: '50%' }} /></div>
+                        <div className="about-skill"><p>HTML & CSS</p> <hr style={{ width: '100%' }} /></div>
+                        <div className="about-skill"><p>React JS</p> <hr style={{ width: '90%' }} /></div>
+                        <div className="about-skill"><p>Javascript</p> <hr style={{ width: '95%' }} /></div>
+                        <div className="about-skill"><p>Node JS</p> <hr style={{ width: '100%' }} /></div>
+                        <div className="about-skill"><p>Express JS</p> <hr style={{ width: '100%' }} /></div>
+                        <div className="about-skill"><p>Mongodb</p> <hr style={{ width: '80%' }} /></div>
+                        <div className="about-skill"><p>Mongoose</p> <hr style={{ width: '90%' }} /></div>
+                        <div className="about-skill"><p>Java</p> <hr style={{ width: '95%' }} /></div>
+                        <div className="about-skill"><p>DSA</p> <hr style={{ width: '90%' }} /></div>
+                        <div className="about-skill"><p>Bootstrap</p> <hr style={{ width: '100%' }} /></div>
+                        <div className="about-skill"><p>Tailwind</p> <hr style={{ width: '86%' }} /></div>
+                        <div className="about-skill"><p>Photoshop</p> <hr style={{ width: '90%' }} /></div>
+                        <div className="about-skill"><p>Premiere</p> <hr style={{ width: '88%' }} /></div>
                     </div>
 
 
@@ -44,22 +53,22 @@ const About = () => {
 
                         {/* Achievement */}
                         <div className="about-achievement">
+                            <h1>1+</h1>
+                            <p>YEARS  <br /> OF PROJECT <br /> EXPERIENCE</p>
+                        </div>
+                        <hr />
+
+                        {/* Achievement */}
+                        <div className="about-achievement">
                             <h1>10+</h1>
-                            <p>YEARS OF EXPERIENCE</p>
+                            <p>PROJECTS <br /> COMPLETED</p>
                         </div>
                         <hr />
 
                         {/* Achievement */}
                         <div className="about-achievement">
-                            <h1>90+</h1>
-                            <p>PROJECTS COMPLETED</p>
-                        </div>
-                        <hr />
-
-                        {/* Achievement */}
-                        <div className="about-achievement">
-                            <h1>15+</h1>
-                            <p>HAPPY CLIENTS</p>
+                            <h1>100%</h1>
+                            <p>EXCELLENCE <br /> CERTIFIED</p>
                         </div>
                     </div>
                 </div>

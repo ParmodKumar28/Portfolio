@@ -28,7 +28,7 @@ const Footer = () => {
             {/* Bottom section */}
             <div className="footer-bottom">
                 <p className="footer-bottom-left">
-                    2024 Parmod Kumar. All rights reserved
+                    2024 Parmod Kumar All rights reserved
                 </p>
                 <div className="footer-bottom-right">
                     <a href="https://www.instagram.com/parmodyadav28/" target="_blank" rel="noopener noreferrer"><AiFillInstagram style={{ color: '#bc2a8d', fontSize: '2.5rem' }} /></a>
