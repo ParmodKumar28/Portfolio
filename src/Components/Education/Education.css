@@ -15,7 +15,7 @@
 
 .education-title h1{
     padding: 0px 30px;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 600;
 }
 
@@ -76,14 +76,28 @@
     }
 
     .education h1 {
-        font-size: 24px; /* Adjust font size */
+        font-size: 35px; /* Adjust font size */
+    }
+
+    .education-title{
+        margin-bottom: 60px;
     }
 
     .education-section, .certification-section {
-       width: 80%;
+       width: 70%; /* Increase width for smaller screens */
     }
 
     .education-title img{
         width: 100px;
+        position: absolute;
+        right: 26%;
+    }
+
+    .education-item h3, .certification-item h3 {
+        font-size: 22px; /* Adjust font size for smaller screens */
+    }
+
+    .education-item p, .certification-item p {
+        font-size: 16px; /* Adjust font size for smaller screens */
     }
 }

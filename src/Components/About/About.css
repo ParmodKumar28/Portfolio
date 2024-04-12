@@ -31,7 +31,7 @@
 
 .about-left img {
     width: 500px;
-    box-shadow: 0px 0px 10px #B415FF; 
+    filter: drop-shadow(0px 0px 10px gray);
 }
 
 
