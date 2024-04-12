@@ -29,6 +29,12 @@
     gap: 80px;
 }
 
+.about-left img {
+    width: 500px;
+    box-shadow: 0px 0px 10px #B415FF; 
+}
+
+
 .about-right{
     display: flex;
     flex-direction: column;

@@ -4,9 +4,20 @@
     flex-direction: column;
     gap: 35px;
 }
-.hero img{
-    margin-top: 150px;
+
+.hero img {
+    width: 350px;
+    border-radius: 50%;
+    margin-top: 120px;
+    filter: drop-shadow(0px 0px 10px rgba(183, 60, 60, 0.5)); /* Add a cool drop shadow */
+    transition: transform 0.3s ease-in-out; /* Add smooth transition for hover effect */
 }
+
+/* Add a hover effect to scale the image */
+.hero img:hover {
+    transform: scale(1.1);
+}
+
 
 .hero h1{
     text-align: center;
