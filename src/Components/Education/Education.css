@@ -39,14 +39,14 @@
     color: white;
     margin-bottom: 10px;
     text-transform: uppercase;
-    border-bottom: 2px solid #333; /* Match border color with other components */
+    border-bottom: 2px solid #333; 
     display: inline-block;
 }
 
 .education-item, .certification-item {
     margin-bottom: 10px;
     padding: 10px;
-    border-left: 4px solid gray; /* Match border color with other components */
+    border-left: 4px solid gray; 
 }
 
 .education-item h3, .certification-item h3 {
@@ -59,24 +59,29 @@
 }
 
 .education-item p, .certification-item p {
-    color: white; /* Adjust text color */
-    font-size: 18px; /* Adjust font size */
+    color: white; 
+    font-size: 18px; 
 }
 
 .education-section:hover, .certification-section:hover{
     border: 2px solid #ff00ff;
-    background-image: linear-gradient(45deg, #3f0028, #582300);
+    /* background-image: linear-gradient(45deg, #3f0    028, #582300); */
     transform: scale(1.05);
     transition: 0.4s;
 }
 
+.certification-item a {
+    text-decoration: none; 
+}
+
+
 @media (max-width: 768px) {
     .education {
-        padding: 20px 0; /* Adjust padding */
+        padding: 20px 0; 
     }
 
     .education h1 {
-        font-size: 35px; /* Adjust font size */
+        font-size: 35px;
     }
 
     .education-title{
@@ -84,7 +89,7 @@
     }
 
     .education-section, .certification-section {
-       width: 70%; /* Increase width for smaller screens */
+       width: 70%; 
     }
 
     .education-title img{
@@ -94,10 +99,10 @@
     }
 
     .education-item h3, .certification-item h3 {
-        font-size: 22px; /* Adjust font size for smaller screens */
+        font-size: 22px; 
     }
 
     .education-item p, .certification-item p {
-        font-size: 16px; /* Adjust font size for smaller screens */
+        font-size: 16px; 
     }
 }
