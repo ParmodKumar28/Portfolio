@@ -47,6 +47,7 @@
     margin-bottom: 10px;
     padding: 10px;
     border-left: 4px solid gray; 
+    transition: transform 0.3s, border 0.3s; /* Add transition for border */
 }
 
 .education-item h3, .certification-item h3 {
