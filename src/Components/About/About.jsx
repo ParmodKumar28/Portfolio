@@ -1,6 +1,7 @@
 import "./About.css"
 import theme_pattern from "../../assets/theme_pattern.svg"
 import cover_photo from "../../assets/cover_photo.jpg"
+import { FaHtml5 } from "react-icons/fa";
 
 const About = () => {
     return (
