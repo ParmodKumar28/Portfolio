@@ -3,13 +3,18 @@ import theme_pattern from "../../assets/theme_pattern.svg"
 import cover_photo from "../../assets/cover_photo.jpg"
 import { FaHtml5 } from "react-icons/fa";
 
+// About component containing about detail's
 const About = () => {
+    // Returning Jsx
     return (
         // About container
         <div id="about" className="about">
+
             {/* About title */}
             <div className="about-title">
+                {/* Heading */}
                 <h1>About me</h1>
+                {/* Image */}
                 <img src={theme_pattern} alt="" />
             </div>
 
@@ -80,4 +85,5 @@ const About = () => {
     )
 }
 
+// Exporting About
 export default About

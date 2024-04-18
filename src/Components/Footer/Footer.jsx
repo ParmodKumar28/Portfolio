@@ -3,8 +3,11 @@ import { AiFillInstagram, AiFillLinkedin, AiFillTwitterSquare, AiFillGithub, AiF
 import { SiLeetcode } from "react-icons/si";
 import logo from "../../assets/logo2.png";
 
+// Footer component
 const Footer = () => {
+    // Returning JSX
     return (
+        // Footer container
         <div className='footer'>
             {/* Footer section's */}
             {/* Top section */}
@@ -22,14 +25,19 @@ const Footer = () => {
 
                     <div className="footer-subscribe">Subscribe</div>
                 </div> */}
-
             </div>
             <hr />
+
+
             {/* Bottom section */}
             <div className="footer-bottom">
+
+                {/* Footer bottom left section */}
                 <p className="footer-bottom-left">
                     2024 &copy; Parmod Kumar All rights reserved
                 </p>
+
+                {/* Footer bottom right section */}
                 <div className="footer-bottom-right">
                     <a href="https://www.instagram.com/parmodyadav28/" target="_blank" rel="noopener noreferrer"><AiFillInstagram style={{ color: '#bc2a8d', fontSize: '2.5rem' }} /></a>
                     <a href="https://www.linkedin.com/in/parmod-kumar-9a176b202/" target="_blank" rel="noopener noreferrer"><AiFillLinkedin style={{ color: '#0077b5', fontSize: '2.5rem' }} /></a>
@@ -43,4 +51,5 @@ const Footer = () => {
     )
 }
 
+// Export Footer
 export default Footer;

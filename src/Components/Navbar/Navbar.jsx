@@ -6,30 +6,35 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 import menu_open from "../../assets/menu_open.svg"
 import menu_close from "../../assets/menu_close.svg"
 
+// Navbar component
 const Navbar = () => {
     // State's
     const [menu, setMenu] = useState("home");
     const menuRef = useRef();
 
+    // On click open button
     const openMenu = () => {
         menuRef.current.style.right = "0";
     }
 
+    // On click close button
     const closeMenu = () => {
         menuRef.current.style.right = "-350px";
     }
 
-
+    // Returning JSX
     return (
-        // Navbar
+        // Navbar container
         <div className='navbar'>
+            {/* Home button */}
             <AnchorLink className='anchor-link' offset={50} href='#home'> <img onClick={() => setMenu("home")} className="logo" src={logo} alt="logo" /></AnchorLink>
 
             {/* For mobile view */}
             <img src={menu_open} alt="" onClick={openMenu} className="nav-mob-open" />
 
-            {/* Menu */}
+            {/* Menu list */}
             <ul ref={menuRef} className="nav-menu">
+                {/* Close icon for mobile */}
                 <img src={menu_close} onClick={closeMenu} alt="" className="nav-mob-close" />
                 {/* Menu items */}
                 <li><AnchorLink className='anchor-link' offset={50} href='#home'> <p onClick={() => setMenu("home")}>Home</p> </AnchorLink> {menu === "home" ? <img src={underline} alt="" /> : <></>} </li>
@@ -40,10 +45,11 @@ const Navbar = () => {
                 <li><AnchorLink className='anchor-link' offset={50} href='#contact'> <p onClick={() => setMenu("contact")}>Contact</p> </AnchorLink> {menu === "contact" ? <img src={underline} alt="" /> : <></>} </li>
             </ul>
 
-            {/* Connect with me */}
+            {/* Connect with me button */}
             <div className="nav-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'> Connect With Me </AnchorLink></div>
         </div>
     )
 }
 
+// Exporting Navbar
 export default Navbar

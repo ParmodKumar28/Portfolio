@@ -8,7 +8,9 @@ import Footer from './Components/Footer/Footer'
 import { Toaster } from "react-hot-toast";
 import Education from './Components/Education/Education'
 
+// Parent App Functional App Component Rendring Children
 const App = () => {
+  // Returning JSX
   return (
     <div>
       <Toaster />
@@ -24,4 +26,5 @@ const App = () => {
   )
 }
 
+// Exporting App
 export default App

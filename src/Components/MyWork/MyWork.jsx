@@ -1,14 +1,17 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./MyWork.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
 import mywork_data from "../../assets/mywork_data.js";
 import arrow_icon from "../../assets/arrow_icon.svg";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"; // Importing icons
 
+// MyWork component containing my project's
 const MyWork = () => {
+    // State's
     const [hoveredWork, setHoveredWork] = useState(null);
     const [numProjectsToShow, setNumProjectsToShow] = useState(6); // Initial number of projects to show
 
+    // Event handler's
     const handleMouseEnter = (index) => {
         setHoveredWork(index);
     };
@@ -21,11 +24,16 @@ const MyWork = () => {
         setNumProjectsToShow(numProjectsToShow + 6); // Increase number of projects to show
     };
 
+    // Returning JSX
     return (
+        // My work container
         <div id="work" className="mywork">
-            {/* Title */}
+
+            {/* Title container*/}
             <div className="mywork-title">
+                {/* Title heading */}
                 <h1>My latest work</h1>
+                {/* Image */}
                 <img src={theme_pattern} alt="" />
             </div>
 
@@ -59,6 +67,7 @@ const MyWork = () => {
                 })}
             </div>
             {numProjectsToShow < mywork_data.length && ( // Only show the "Show More" button if there are more projects to show
+                // Showmore button container
                 <div className="mywork-showmore" onClick={handleShowMore}>
                     <p>Show More</p>
                     <img src={arrow_icon} alt="" />
@@ -68,4 +77,5 @@ const MyWork = () => {
     );
 };
 
+// Exporting MyWork
 export default MyWork;
