@@ -62,7 +62,7 @@ const Education = () => {
 
                 {/* Certification item */}
                 <div className="certification-item">
-                    <a href="https://ninjasfiles.s3.amazonaws.com/certificate33464846bdab43a27390652b287fce996444fa4.pdf" target="_blank" rel="noopener noreferrer"><h3>Career Camp | Data Structures in JAVA
+                    <a href="https://certificate.codingninjas.com/view/36756c8827110455" target="_blank" rel="noopener noreferrer"><h3>Career Camp | Data Structures in JAVA
                     </h3></a>
                     <p>Coding Ninjas, 2023</p>
                 </div>
