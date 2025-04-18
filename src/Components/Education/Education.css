@@ -1,113 +1,187 @@
 /* Education.css */
 .education {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
 }
 
 .education-title {
-    position: relative;
-    margin-bottom: 80px;
+  position: relative;
+  margin-bottom: 80px;
 }
 
 .education-title h1 {
-    padding: 0px 30px;
-    font-size: 70px;
-    font-weight: 600;
+  padding: 0px 30px;
+  font-size: 70px;
+  font-weight: 600;
 }
 
 .education-title img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 }
 
-.education-section, .certification-section {
-    width: 80%;
-    border: 2px solid white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
+.education-section,
+.certification-section {
+  width: 80%;
+  border: 2px solid white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
 
-.education-section h2, .certification-section h2 {
-    color: white;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    border-bottom: 2px solid #333;
-    display: inline-block;
+.education-section h2,
+.certification-section h2 {
+  color: white;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #333;
+  display: inline-block;
 }
 
-.education-item, .certification-item {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-left: 4px solid gray;
-    transition: transform 0.3s, border 0.3s; /* Add transition for border */
-    cursor: pointer; /* Change cursor to pointer to indicate clickable */
+.education-item,
+.certification-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-left: 4px solid gray;
+  transition: transform 0.3s, border 0.3s;
+  cursor: pointer;
 }
 
-.certification-item:hover, .education-item:hover {
-    border-color: #ff00ff; /* Change border color on hover */
+.certification-item:hover,
+.education-item:hover {
+  border-color: #ff00ff;
 }
 
-.education-item h3, .certification-item h3 {
-    font-size: 26px;
-    font-weight: 800;
-    background: linear-gradient(270deg, #DF8909 70%, #B415FF 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.education-item h3,
+.certification-item h3 {
+  font-size: 26px;
+  font-weight: 800;
+  background: linear-gradient(270deg, #df8909 70%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.education-item p, .certification-item p {
-    color: white;
-    font-size: 18px;
+.education-item p,
+.certification-item p {
+  color: white;
+  font-size: 18px;
 }
 
 .certification-item a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.certification-item h3:hover{
-    background: linear-gradient(270deg, #5f72eb 70%, #c88ee4 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.certification-item h3:hover {
+  background: linear-gradient(270deg, #5f72eb 70%, #c88ee4 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
+/* Experience Section Styling */
+.experience-section {
+  width: 80%;
+  border: 2px solid #00bcd4; /* Light blue border */
+  box-shadow: 0px 0px 12px rgba(0, 188, 212, 0.3); /* Light blue shadow */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.experience-section h2 {
+  color: #00bcd4; /* Cyan heading */
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #00acc1;
+  display: inline-block;
+}
+
+.experience-item {
+  margin-bottom: 12px;
+  padding: 12px;
+  border-left: 4px solid #00acc1;
+  transition: transform 0.3s, border 0.3s;
+  cursor: pointer;
+  background-color: rgba(0, 188, 212, 0.05);
+}
+
+.experience-item:hover {
+  border-color: #26c6da;
+}
+
+.experience-item h3 {
+  font-size: 26px;
+  font-weight: 800;
+  background: linear-gradient(270deg, #00bcd4 70%, #0077b6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.experience-item p {
+  color: white;
+  font-size: 18px;
+}
+
+/* Optional: Location style */
+.experience-item .location {
+  color: #ccc;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-    .education {
-        padding: 20px 0;
-    }
+  .education {
+    padding: 20px 0;
+  }
 
-    .education h1 {
-        font-size: 35px;
-    }
+  .education h1 {
+    font-size: 35px;
+  }
 
-    .education-title {
-        margin-bottom: 60px;
-    }
+  .education-title {
+    margin-bottom: 60px;
+  }
 
-    .education-section, .certification-section {
-        width: 70%;
-    }
+  .education-section,
+  .certification-section {
+    width: 70%;
+  }
+  .education-item h3,
+  .certification-item h3 {
+    font-size: 22px;
+  }
 
-    .education-title img {
-        width: 100px;
-        position: absolute;
-        right: 26%;
-    }
+  .education-item p,
+  .certification-item p {
+    font-size: 16px;
+  }
 
-    .education-item h3, .certification-item h3 {
-        font-size: 22px;
-    }
+  .education-title img {
+    width: 100px;
+    position: absolute;
+    right: 26%;
+  }
 
-    .education-item p, .certification-item p {
-        font-size: 16px;
-    }
+  .experience-section {
+    width: 70%;
+  }
+
+  .experience-item h3 {
+    font-size: 22px;
+  }
+
+  .experience-item p,
+  .experience-item .location {
+    font-size: 16px;
+  }
 }
