@@ -31,8 +31,9 @@ const About = () => {
                 <div className="about-right">
                     {/* About para */}
                     <div className="about-para">
-                        <p>Hey there, I’m Parmod Yadav, a tech enthusiast with an insatiable hunger for knowledge and an unyielding passion for all things automobiles. As an MCA graduate and aspiring MERN stack web developer, I’m constantly honing my skills to conquer the ever-evolving world of technology. But my heart truly races when it comes to bikes and cars. </p>
-                        <p> The raw power, the elegant designs, the thrilling rides – they captivate my soul and ignite my imagination.</p>
+                        <p>I’m Parmod Yadav, an MCA graduate, passionate MERN stack developer, and automobile enthusiast. I love building sleek, functional web apps and exploring the world of bikes and cars.</p>
+                        <p> When I’m not coding, you’ll find me reviewing automobiles on my YouTube channel, sharing my love for speed, design, and engineering with fellow enthusiasts.</p>
+                        <p> Tech fuels my career, but automobiles drive my soul.</p>
                     </div>
 
                     {/* About skills */}
@@ -60,7 +61,7 @@ const About = () => {
                         {/* Achievement */}
                         <div className="about-achievement">
                             <h1>1+</h1>
-                            <p>YEARS  <br /> OF PROJECT <br /> EXPERIENCE</p>
+                            <p>YEARS  <br /> EXPERIENCE <br /> </p>
                         </div>
                         <hr />
 

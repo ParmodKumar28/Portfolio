@@ -14,7 +14,7 @@ const Hero = () => {
 
             {/* About me */}
             <h1><span>I'm Parmod Kumar,</span> Full stack developer based in INDIA.</h1>
-            <p>Hey there, I’m Parmod Yadav, a tech enthusiast with an insatiable hunger for knowledge and an unyielding passion for all things automobiles. </p>
+            <p>Hi, I’m Parmod Yadav — a MERN stack developer with a passion for tech and a love for automobiles. I build web apps and review bikes & cars on YouTube. </p>
 
             {/* Connect and resume button container */}
             <div className="hero-action">
