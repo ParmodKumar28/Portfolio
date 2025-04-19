@@ -12,6 +12,7 @@ const MyWork = lazy(() => import('./Components/MyWork/MyWork'));
 const Contact = lazy(() => import('./Components/Contact/Contact'));
 const Footer = lazy(() => import('./Components/Footer/Footer'));
 const Education = lazy(() => import('./Components/Education/Education'));
+const Youtube = lazy(() => import('./Components/Youtube/Youtube'));
 
 // Custom fallback component
 const LoadingFallback = () => (
@@ -21,7 +22,7 @@ const LoadingFallback = () => (
 );
 
 // Delay wrapper
-const DelayedSuspense = ({ children, delay = 1500 }) => {
+const DelayedSuspense = ({ children, delay = 1200 }) => {
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
@@ -47,16 +48,17 @@ const App = () => {
     <div>
       <Toaster />
       <DelayedSuspense delay={1500}>
-      <Suspense fallback={<LoadingFallback />}>
-        <Navbar />
-        <Hero />
-        <About />
-        <Education />
-        <Services />
-        <MyWork />
-        <Contact />
-        <Footer />
-      </Suspense>
+        <Suspense fallback={<LoadingFallback />}>
+          <Navbar />
+          <Hero />
+          <About />
+          <Youtube />
+          <Education />
+          <Services />
+          <MyWork />
+          <Contact />
+          <Footer />
+        </Suspense>
       </DelayedSuspense>
     </div>
   );

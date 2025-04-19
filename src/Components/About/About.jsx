@@ -23,7 +23,7 @@ const About = () => {
                 {/* About section left */}
                 <div className="about-left">
                     {/* Profile image */}
-                    <img loading="lazy" src={cover_photo} alt="" />
+                    <img src={cover_photo} alt="" />
                 </div>
 
                 {/* About section right */}
