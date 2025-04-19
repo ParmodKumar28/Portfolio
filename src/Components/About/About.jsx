@@ -1,6 +1,6 @@
 import "./About.css"
 import theme_pattern from "../../assets/theme_pattern.svg"
-import cover_photo from "../../assets/cover_photo.jpg"
+import cover_photo from "../../assets/cover_photo.webp"
 
 // About component containing about detail's
 const About = () => {
@@ -23,7 +23,7 @@ const About = () => {
                 {/* About section left */}
                 <div className="about-left">
                     {/* Profile image */}
-                    <img src={cover_photo} alt="" />
+                    <img loading="lazy" src={cover_photo} alt="" />
                 </div>
 
                 {/* About section right */}

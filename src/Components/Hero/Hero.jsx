@@ -1,7 +1,7 @@
 import "./Hero.css"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import resume from "../../assets/my_resume.pdf"
-import profile from "../../assets/profile.jpg"
+import profile from "../../assets/profile.webp"
 
 // Hero component containing about me and my photo
 const Hero = () => {
@@ -10,7 +10,7 @@ const Hero = () => {
         // Hero container
         <div id='home' className='hero'>
             {/* My photo */}
-            <img src={profile} alt="" />
+            <img loading="eager" src={profile} alt="" />
 
             {/* About me */}
             <h1><span>I'm Parmod Kumar,</span> Full stack developer based in INDIA.</h1>

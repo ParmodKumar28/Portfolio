@@ -48,7 +48,7 @@ const MyWork = () => {
                             onMouseEnter={() => handleMouseEnter(index)}
                             onMouseLeave={handleMouseLeave}
                         >
-                            <img src={work.w_img} alt="" />
+                            <img loading="lazy" src={work.w_img} alt="" />
                             <div className="work-overlay">
                                 <h3 className="work-title">{work.title}</h3> {/* Display project title */}
                                 {hoveredWork === index && (

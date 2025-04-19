@@ -1,17 +1,17 @@
-import project1_img from "../assets/BusyBuy.png";
-import project2_img from "../assets/Job Portal.png";
-import project3_img from "../assets/Weather App.png";
-import project4_img from "../assets/Employee Review System.png";
-import project5_img from "../assets/Chatter Up.png";
-import project6_img from "../assets/Super Hero Hunter.png";
-import project7_img from "../assets/Apple Ipod.png";
-import project8_img from "../assets/Music Player.png";
-import project9_img from "../assets/Issue Tracker.png";
-import project10_img from "../assets/Photofolio.png";
-import project11_img from "../assets/Calculator.png";
-import project12_img from "../assets/Stopwatch.png";
-import project13_img from "../assets/E-Commerce.png";
-import project14_img from "../assets/Clothing E-Commerce.png";
+import project1_img from "../assets/BusyBuy.webp";
+import project2_img from "../assets/Job Portal.webp";
+import project3_img from "../assets/Weather App.webp";
+import project4_img from "../assets/Employee Review System.webp";
+import project5_img from "../assets/Chatter Up.webp";
+import project6_img from "../assets/Super Hero Hunter.webp";
+import project7_img from "../assets/Apple Ipod.webp";
+import project8_img from "../assets/Music Player.webp";
+import project9_img from "../assets/Issue Tracker.webp";
+import project10_img from "../assets/Photofolio.webp";
+import project11_img from "../assets/Calculator.webp";
+import project12_img from "../assets/Stopwatch.webp";
+import project13_img from "../assets/E-Commerce.webp";
+import project14_img from "../assets/Clothing E-Commerce.webp";
 
 const mywork_data = [
   {
