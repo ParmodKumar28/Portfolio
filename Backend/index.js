@@ -16,6 +16,10 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get('/', (req, res) => {
+  res.send('YouTube API Proxy Server is running!');
+} );
+
 app.get('/api/youtube', async (req, res) => {
   const API_KEY = process.env.YOUTUBE_API_KEY;
   const CHANNEL_ID = process.env.YOUTUBE_CHANNEL_ID;
