@@ -74,7 +74,7 @@
 
 /* Exclude shadow effect on mobile */
 @media(max-width: 768px){
-    .navbar.scrolled {
+    .navbar, .scrolled {
         box-shadow: none; /* Remove shadow on mobile */
     }
 

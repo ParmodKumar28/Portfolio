@@ -35,6 +35,8 @@ app.get('/', (req, res) => {
 app.get('/api/youtube', async (req, res) => {
   const API_KEY = process.env.YOUTUBE_API_KEY;
   const CHANNEL_ID = process.env.YOUTUBE_CHANNEL_ID;
+  console.log(`API_KEY: ${API_KEY}, CHANNEL_ID: ${CHANNEL_ID}`);
+  
 
   if (!API_KEY || !CHANNEL_ID) {
     if(process.env.NODE_ENV === 'development') {
@@ -65,8 +67,9 @@ app.get('/api/youtube', async (req, res) => {
 
     res.json(data);
   } catch (error) {
-    console.error('💥 YouTube API error:', error.message);
-    res.status(500).send('Internal Server Error');
+    const message = error.message || error.toString();
+    console.error('💥 YouTube API error:', message);
+    res.status(500).json({ error: 'Internal Server Error', message });
   }
 });
 
