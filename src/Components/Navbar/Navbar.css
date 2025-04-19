@@ -76,6 +76,7 @@
 @media(max-width: 768px){
     .navbar, .scrolled {
         box-shadow: none; /* Remove shadow on mobile */
+        background-color: transparent;
     }
 
     .navbar{
