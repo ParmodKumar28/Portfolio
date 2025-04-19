@@ -36,9 +36,6 @@ app.get("/api/youtube", async (req, res) => {
   const API_KEY = process.env.YOUTUBE_API_KEY?.trim();
   const CHANNEL_ID = process.env.YOUTUBE_CHANNEL_ID?.trim();
 
-  console.log("✅ API_KEY Present:", !!API_KEY);
-  console.log("✅ CHANNEL_ID Present:", !!CHANNEL_ID);
-
   if (!API_KEY || !CHANNEL_ID) {
     return res.status(400).json({
       error: "Missing environment variables",
@@ -57,8 +54,6 @@ app.get("/api/youtube", async (req, res) => {
     const videoUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${encodeURIComponent(
       CHANNEL_ID
     )}&maxResults=6&order=date&type=video&key=${encodeURIComponent(API_KEY)}`;
-
-    console.log("🌐 Fetching:", channelUrl);
 
     const channelRes = await fetch(channelUrl);
     const channelData = await channelRes.json();
