@@ -4,6 +4,15 @@
     align-items: center;
     justify-content: space-between;
     margin: 20px 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 200px); /* Adjusting width to avoid layout issues */
+    z-index: 10;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    background-color: transparent; /* Default navbar background */
+    padding: 0 20px;
+    border-radius: 15px; /* Rounded edges */
 }
 
 .nav-menu{
@@ -54,6 +63,13 @@
 
 .logo{
     width: 200px;
+}
+
+/* Add a shade effect and box shadow on scroll */
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8); /* Shade effect when scrolling */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+    border-radius: 15px; /* Rounded edges when scrolled */
 }
 
 @media(max-width: 768px){

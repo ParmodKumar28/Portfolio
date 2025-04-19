@@ -13,8 +13,8 @@ const Hero = () => {
             <img loading="eager" src={profile} alt="" />
 
             {/* About me */}
-            <h1><span>I'm Parmod Kumar,</span> Full stack developer based in INDIA.</h1>
-            <p>Hi, I’m Parmod Yadav — a MERN stack developer with a passion for tech and a love for automobiles. I build web apps and review bikes & cars on YouTube. </p>
+            <h1><span>I&apos;m Parmod Kumar,</span> Full stack developer based in INDIA.</h1>
+            <p>Hi, I&apos;m Parmod Yadav — a MERN stack developer with a passion for tech and a love for automobiles. I build web apps and review bikes & cars on YouTube. </p>
 
             {/* Connect and resume button container */}
             <div className="hero-action">
