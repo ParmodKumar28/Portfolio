@@ -4,9 +4,9 @@
     align-items: center;
     height: 100vh;
     background-color: #161513;
-  }
-  
-  .loading-text {
+}
+
+.loading-text {
     font-size: 3rem;
     font-weight: bold;
     font-family: 'Outfit', sans-serif;
@@ -15,15 +15,22 @@
     overflow: hidden;
     border-right: 2px solid #4CAF50;
     width: 0;
-    animation: typing 1 steps(6) forwards, blink 0.75s step-end infinite;
-  }
-  
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 6.6ch }
-  }
-  
-  @keyframes blink {
-    50% { border-color: transparent }
-  }
-  
+    animation: typing 1s steps(6) forwards, blink 0.75s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 6.6ch; /* Adjusted to 6 characters */
+    }
+}
+
+/* Cursor blinking */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}

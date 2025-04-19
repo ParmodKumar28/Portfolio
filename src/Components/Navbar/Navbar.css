@@ -72,7 +72,12 @@
     border-radius: 15px; /* Rounded edges when scrolled */
 }
 
+/* Exclude shadow effect on mobile */
 @media(max-width: 768px){
+    .navbar.scrolled {
+        box-shadow: none; /* Remove shadow on mobile */
+    }
+
     .navbar{
         margin: 20px 50px;
     }
@@ -102,7 +107,7 @@
         top: 0;
         gap: 30px;
         background-color: #1F0016;
-        width: 350PX;
+        width: 350px;
         height: 100%;
         z-index: 2;
         transition: right 0.5s;
