@@ -22,7 +22,7 @@ const educationData = [
   {
     title: "Full Stack with DSA Bootcamp",
     institution: "Coding Ninjas",
-    year: "Apr 2024 - Feb 2024",
+    year: "Apr 2023 - Feb 2024",
   },
   {
     title: "Master's in Computer Applications",
