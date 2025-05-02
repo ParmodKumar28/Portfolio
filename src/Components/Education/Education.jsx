@@ -69,11 +69,17 @@ const certificationData = [
     link: "https://ninjasfiles.s3.amazonaws.com/certificate33464833526c0b9a3a2e3cc793ce48f7e0a534f.pdf",
   },
   {
+    title: "System Design",
+    issuer: "Coding Ninjas",
+    year: "2024",
+    link: "https://certificate.codingninjas.com/view/2589348c01f82eb0",
+  },
+  {
     title: "Web Development | Generative AI",
     issuer: "Coding Ninjas",
     year: "2025",
     link: "https://certificate.codingninjas.com/view/4a7f7707f5d82ada",
-  },
+  }
 ];
 
 const Education = () => {
