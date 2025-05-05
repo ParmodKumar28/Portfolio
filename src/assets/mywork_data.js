@@ -68,7 +68,7 @@ const mywork_data = [
     title: "Apple Ipod",
     w_name: "Web design",
     w_img: project7_img,
-    live_link: "https://appleipod.netlify.app/",
+    live_link: "https://ipod28.netlify.app/",
     github_link: "https://github.com/ParmodKumar28/Ipod",
   },
   {
