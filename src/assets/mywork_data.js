@@ -124,7 +124,7 @@ const mywork_data = [
     title: "Clothing E-Commerce",
     w_name: "Web design",
     w_img: project14_img,
-    live_link: "",
+    live_link: "https://clothie-store.netlify.app/",
     github_link: "https://github.com/ParmodKumar28/E-Commerce",
   },
 ];
