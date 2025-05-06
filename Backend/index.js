@@ -18,22 +18,7 @@ const NODE_ENV = process.env.NODE_ENV || "development";
 //   next();
 // });
 
-const allowedOrigins = [
-  "https://6819b3837298db79bd1bcfb7--parmodkumar28.netlify.app", // Production URL
-  "http://localhost:5174" // Development React URL (adjust based on your setup)
-];
-
-app.use(cors({
-  origin: function (origin, callback) {
-    if (allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-  methods: ["GET", "POST", "PUT", "DELETE"], // Allowed methods
-  allowedHeaders: ["Content-Type", "Authorization"], // Allow necessary headers
-}));
+app.use(cors({ origin: "*" })); // Allow all origins (for development only)
 
 // Content Security Policy (Optional: only needed if serving frontend)
 app.use((req, res, next) => {
