@@ -18,7 +18,7 @@ const NODE_ENV = process.env.NODE_ENV || "development";
 //   next();
 // });
 
-app.use(cors({ origin: "*" })); // Allow all origins (for development only)
+app.use(cors()); // Allow all origins (for development only)
 
 // Content Security Policy (Optional: only needed if serving frontend)
 app.use((req, res, next) => {
