@@ -12,6 +12,7 @@ import project11_img from "../assets/Calculator.webp";
 import project12_img from "../assets/Stopwatch.webp";
 import project13_img from "../assets/E-Commerce.webp";
 import project14_img from "../assets/Clothing E-Commerce.webp";
+import project16_img from "../assets/Instagram-project.webp";
 
 const mywork_data = [
   {
@@ -127,6 +128,14 @@ const mywork_data = [
     live_link: "https://clothie-store.netlify.app/",
     github_link: "https://github.com/ParmodKumar28/E-Commerce",
   },
+  {
+    w_no: 15,
+    title: "Instagram Clone",
+    w_name: "Web design",
+    w_img: project16_img,
+    live_link: "https://my-socialgram.netlify.app/",
+    github_link: "https://github.com/ParmodKumar28/Instagram"
+  }
 ];
 
 export default mywork_data;

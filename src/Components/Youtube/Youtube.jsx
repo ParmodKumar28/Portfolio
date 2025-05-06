@@ -55,11 +55,11 @@ const YouTube = () => {
   if (loading || !channelInfo || videos.length === 0) {
     return null;
   }
-
+console.log(channelInfo.snippet.thumbnails.high)
   return (
     <section className="youtube-section">
       <div id="about-channel">
-        <img src={channelInfo.snippet.thumbnails.high.url} alt="" />
+        {channelInfo.snippet.thumbnails.high.url && <img src={channelInfo.snippet.thumbnails.high.url} alt="" />}
         <p className="custom-url">{channelInfo.snippet.customUrl}</p>
         <h2 className="youtube-title">🚀 My YouTube Channel</h2>
         <p className="youtube-description">{channelInfo.snippet.description}</p>
