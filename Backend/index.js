@@ -11,22 +11,7 @@ const PORT = process.env.PORT || 8000;
 const NODE_ENV = process.env.NODE_ENV || "development";
 
 // CORS Middleware
-app.use(
-  cors({
-    origin: ["https://parmodkumar28.netlify.app"], // Allow only your frontend origin
-    methods: ["GET"], // Allow only GET requests
-    allowedHeaders: ["Content-Type"], // Allow specific headers
-  })
-);
-
-// Content Security Policy (Optional: only needed if serving frontend)
-app.use((req, res, next) => {
-  res.setHeader(
-    "Content-Security-Policy",
-    "default-src 'self'; script-src 'self'; worker-src 'self' blob:;"
-  );
-  next();
-});
+app.use(cors()); // Allow all origins (for debugging)
 
 // Health Check
 app.get("/", (req, res) => {
