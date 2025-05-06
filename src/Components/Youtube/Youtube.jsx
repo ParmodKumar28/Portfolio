@@ -58,7 +58,13 @@ const YouTube = () => {
 
   return (
     <section className="youtube-section">
-      <h2 className="youtube-title">🚀 My YouTube Channel</h2>
+      <div id="about-channel">
+        <img src={channelInfo.snippet.thumbnails.high.url} alt="" />
+        <p className="custom-url">{channelInfo.snippet.customUrl}</p>
+        <h2 className="youtube-title">🚀 My YouTube Channel</h2>
+        <p className="youtube-description">{channelInfo.snippet.description}</p>
+      </div>
+
 
       <div className="channel-info">
         <h3>{channelInfo.snippet.title}</h3>
