@@ -27,7 +27,7 @@ const YouTube = () => {
           }
         }
 
-        const res = await fetch(API_URL);
+        const res = await fetch(`${API_URL}/api/youtube`);
         const data = await res.json();
 
         setChannelInfo(data.channelInfo);
