@@ -2,6 +2,7 @@ import { lazy, Suspense, useState, useEffect } from 'react';
 import { Toaster } from "react-hot-toast";
 import "./app.css"
 import PropTypes from 'prop-types';
+import ScrollToTop from "react-scroll-to-top";
 
 // Lazy loading components
 const Navbar = lazy(() => import('./Components/Navbar/Navbar'));
@@ -46,8 +47,9 @@ const App = () => {
   // Returning JSX
   return (
     <div>
-      <Toaster />
-      <DelayedSuspense delay={1500}>
+      <Toaster position="top-right" reverseOrder={false} />
+      <ScrollToTop smooth top={200} style={{ backgroundColor: "#6c63ff", color: "#fff", }} />
+      <DelayedSuspense delay={2000}>
         <Suspense fallback={<LoadingFallback />}>
           <Navbar />
           <Hero />
